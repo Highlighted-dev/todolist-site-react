@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const AddTask = ({ onAdd }) => {
+const AddTask = ({ onSave }) => {
     const [text, setText] = useState('');
     const [date, setDate] = useState('');
 
@@ -16,7 +16,7 @@ const AddTask = ({ onAdd }) => {
             return
         }
 
-        onAdd({ text, date });
+        onSave({ text, date });
         setText('');
         setDate('');
             
