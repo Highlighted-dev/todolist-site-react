@@ -33,7 +33,10 @@ function App() {
 
   return (
     <div className="container">
-      <Header onAdd={() => setShowAddTask(!showAddTask)}/>
+      <Header onAdd={() => setShowAddTask(!showAddTask)}
+          showAdd={showAddTask}
+        />
+
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} /> : 'There are no tasks'}
       {showAddTask ? <AddTask onSave={addTask} /> : ''}
     </div>
