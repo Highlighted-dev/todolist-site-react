@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "text": "Zapłać za prąd",
+      "date": "30 maja 20:00"
+    },
+    {
+      "id": 3,
+      "text": "Naucz się na matematykę",
+      "date": "16 maja 23:00"
+    }
+  ]
+}
